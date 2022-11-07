@@ -42,7 +42,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`flex mt-2 font-bold text-xl leading-none text-black`}
+    ${tw`flex mt-2 font-bold text-xl leading-none text-black items-center`}
   }
 
   .description {
@@ -53,6 +53,7 @@ const Card = styled.div`
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
+const PrimaryActionBtn = tw.button`rounded-full px-8 py-3 mt-8 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default () => {
   /*
@@ -74,7 +75,7 @@ export default () => {
     {
       imageSrc: SupportIconImage,
       title: "IT Consultant",
-      description: "Have a IT problem?dont worry let us help you.",
+      description: "Have a IT problem? dont worry let us help you.",
     },
     {
       imageSrc: CustomizeIconImage,
@@ -106,6 +107,16 @@ export default () => {
                 </span>
                 <p className="description">{card.description}</p>
               </span>
+              <PrimaryActionBtn
+                style={{
+                  width: "15rem",
+                  background: "black",
+                  color: "white",
+                  marginRight: "auto",
+                }}
+              >
+                Find More
+              </PrimaryActionBtn>
             </Card>
           </Column>
         ))}
