@@ -47,16 +47,11 @@ const PrimaryActionBtn = tw.button`rounded-full px-8 py-3 mt-8 text-sm sm:text-b
 
 export default () => {
   const navLinks = [
-    <NavLinks key={1} style={{
-      border: "solid white",
-      borderRadius: "20px",
-      width: "60rem",
-      textAlign: 'center'
-    }}>
+    <NavLinks key={1}>
       <NavLink href="#">ABOUT US</NavLink>
       <NavLink href="#">SERVICE</NavLink>
       <NavLink href="#">CONTACT US</NavLink>
-      <NavLink href="#">OUT TEAM</NavLink>
+      <NavLink href="#">OUR TEAM</NavLink>
     </NavLinks>,
     // <NavLinks key={2}>
     //   <PrimaryLink href="/#">Hire Us</PrimaryLink>

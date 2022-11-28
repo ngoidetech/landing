@@ -28,6 +28,10 @@ const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/2 px-6 flex place-content-center`}
 `;
 
+const ColumnRightBorder = styled.div`
+  ${tw`md:w-1/2 lg:w-1/2 px-6 flex place-content-center md:border-r-4 md:border-black`}
+`;
+
 const Card = styled.div`
   ${tw`flex flex-col max-w-xs items-center my-12`}
   .imageContainer {
@@ -82,6 +86,7 @@ export default () => {
       title: "Mobile Development",
       description:
         "We are experienced in mobile development for your business needs",
+      border: true,
     },
     {
       imageSrc: ReliableIconImage,
@@ -94,32 +99,53 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        {cards.map((card, i) => (
-          <Column
-            key={i}
-            className={card.border == true && "border-r-4 border-black"}
-          >
-            <Card>
-              <span className="textContainer">
-                <span className="title">
-                  <img src={IconVerif} style={{ marginRight: "1rem" }} />{" "}
-                  {card.title}
+        {cards.map((card, i) =>
+          card.border == true ? (
+            <ColumnRightBorder key={i}>
+              <Card>
+                <span className="textContainer">
+                  <span className="title">
+                    <img src={IconVerif} style={{ marginRight: "1rem" }} />{" "}
+                    {card.title}
+                  </span>
+                  <p className="description">{card.description}</p>
                 </span>
-                <p className="description">{card.description}</p>
-              </span>
-              <PrimaryActionBtn
-                style={{
-                  width: "15rem",
-                  background: "black",
-                  color: "white",
-                  marginRight: "auto",
-                }}
-              >
-                Find More
-              </PrimaryActionBtn>
-            </Card>
-          </Column>
-        ))}
+                <PrimaryActionBtn
+                  style={{
+                    width: "15rem",
+                    background: "black",
+                    color: "white",
+                    marginRight: "auto",
+                  }}
+                >
+                  Find More
+                </PrimaryActionBtn>
+              </Card>
+            </ColumnRightBorder>
+          ) : (
+            <Column key={i}>
+              <Card>
+                <span className="textContainer">
+                  <span className="title">
+                    <img src={IconVerif} style={{ marginRight: "1rem" }} />{" "}
+                    {card.title}
+                  </span>
+                  <p className="description">{card.description}</p>
+                </span>
+                <PrimaryActionBtn
+                  style={{
+                    width: "15rem",
+                    background: "black",
+                    color: "white",
+                    marginRight: "auto",
+                  }}
+                >
+                  Find More
+                </PrimaryActionBtn>
+              </Card>
+            </Column>
+          )
+        )}
       </ThreeColumnContainer>
       {/* <DecoratorBlob /> */}
     </Container>
