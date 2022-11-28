@@ -79,14 +79,14 @@ export default () => {
                 +62 822 1022 5677
               </LinkListItem>
               <LinkListItem>
-                <Link href="mailto:support@servana.com">ngoidetech@gmail.com</Link>
+                <Link href="#">ngoidetech@gmail.com</Link>
               </LinkListItem>
             </LinkList>
           </ColumnRight>
         </FiveColumns>
         <Divider/>
         <CopyrightAndCompanyInfoRow>
-          <CopyrightNotice>&copy; Copyright 2020, Treact Inc.</CopyrightNotice>
+          <CopyrightNotice>&copy; Copyright 2022, Ngoide Tech.</CopyrightNotice>
         </CopyrightAndCompanyInfoRow>
       </Content>
     </Container>
