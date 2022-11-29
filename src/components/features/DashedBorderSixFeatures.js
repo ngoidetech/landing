@@ -118,7 +118,7 @@ export default () => {
                     marginRight: "auto",
                   }}
                 >
-                  Find More
+                  See Our Portofolio
                 </PrimaryActionBtn>
               </Card>
             </ColumnRightBorder>
@@ -140,7 +140,7 @@ export default () => {
                     marginRight: "auto",
                   }}
                 >
-                  Find More
+                  See Our Portofolio
                 </PrimaryActionBtn>
               </Card>
             </Column>

@@ -51,7 +51,7 @@ export default () => {
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="/about-us">About Us</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Service</Link>

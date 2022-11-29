@@ -31,11 +31,12 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+)`mt-4 font-black text-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Description = tw.p`mt-4 text-center text-black md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed`;
+const Description1 = tw.p`mt-4 text-center text-secondary-100 md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
+  tw`mt-4 md:mt-4 text-sm inline-block mx-auto md:mx-0 bg-black text-white`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -74,6 +75,7 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
+            <Description1>Get close with us?</Description1>
             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
