@@ -4,7 +4,9 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import BgHome from "images/bg-about.png";
-import Group from "images/Group1.png";
+import Group from "images/Group.png";
+import service_left from "images/service_left.png";
+import service_right from "images/service_right.png";
 import Header, {
   NavLink,
   NavLinks,
@@ -17,7 +19,7 @@ import Footer from "components/footers/FiveColumnDark.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Features from "components/features/ThreeColSimple.js";
+// import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
 import {
@@ -28,6 +30,7 @@ import {
   SectionHeading,
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
+import Features from "components/features/DashedBorderSixFeatures";
 
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
@@ -45,7 +48,7 @@ const StyledHeader = styled(Header)`
 
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-96 min-h-96`}
-  background-image: url("${BgHome}" );
+  background-color: #000;
 `;
 const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
 
@@ -55,8 +58,25 @@ const Content = tw.div`px-4 flex flex-1 flex-col`;
 const Container1 = tw(ContainerBase)`text-gray-100 -mx-8 px-8`;
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)`sm:text-3xl md:text-4xl lg:text-5xl`;
+const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 
-export default () => {
+const ContainerImage = tw.div`relative`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const ImageColumn = tw(Column)`md:w-4/12 flex-shrink-0 relative`;
+const ImageColumn1 = tw(Column)`md:w-8/12 flex-shrink-0 relative`;
+const Image = styled.img((props) => [
+  props.imageRounded && tw`rounded`,
+  props.imageBorder && tw`border`,
+  props.imageShadow && tw`shadow`,
+]);
+
+export default (
+  imageRounded = true,
+  imageBorder = false,
+  imageShadow = false,
+  imageCss = "width: 93%",
+  imageCss1 = "width: 100%"
+) => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="/about-us">ABOUT US</NavLink>
@@ -74,25 +94,41 @@ export default () => {
         <Content>
           <AnimationRevealPage>
             <StyledHeader links={navLinks} />
-            <Container1>
-              <ContentWithPaddingXl>
-                <HeadingContainer>
-                  <Heading>About Us</Heading>
-                </HeadingContainer>
-              </ContentWithPaddingXl>
-            </Container1>
-            <MainFeature1
-              subheading=""
-              heading="Our Story"
-              buttonRounded={false}
-              description="we are a group of young people who like digital technology, 
-              even though we are young, we already have a lot of experience 
-              in the field of Information and Technology ranging from website creation, 
-              mobile application development, UI/UX, and several times solving difficult problems 
-              in the field of Information and Technology"
-              primaryButtonText="See Our Team"
-              imageSrc={Group}
-            />
+            <ContainerImage>
+              <TwoColumn>
+                <ImageColumn>
+                  <Image css={imageCss} src={service_left} />
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      color: "white",
+                      fontSize: "xxx-large"
+                    }}
+                  >
+                    Our
+                  </div>
+                </ImageColumn>
+                <ImageColumn1>
+                  <Image css={imageCss1} src={service_right} />
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      color: "white",
+                      fontSize: "xxx-large"
+                    }}
+                  >
+                    Service
+                  </div>
+                </ImageColumn1>
+              </TwoColumn>
+            </ContainerImage>
+            <Features />
           </AnimationRevealPage>
           <Footer />
         </Content>

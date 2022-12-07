@@ -95,6 +95,7 @@ import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
 import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
+import ServicePage from "pages/Service.js";
 import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
@@ -121,7 +122,7 @@ export default function App() {
           <Route path="/thank-you" element={<ThankYouPage />} /> */}
           <Route path="/our-team" element={<AboutUsPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
-          <Route path="/service" element={<AboutUsPage />} />
+          <Route path="/service" element={<ServicePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/" element={<EventLandingPage />} />
         </Routes>
