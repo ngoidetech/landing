@@ -39,7 +39,10 @@ export default ({
     <Container>
       <ContentWithPaddingXl>
         <HeadingContainer>
-          <Heading>Our Service</Heading>
+          <Heading style={{
+            color: 'black',
+            textShadow:'-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,  1px 1px 0 #fff'
+          }}>Our Service</Heading>
         </HeadingContainer>
       </ContentWithPaddingXl>
     </Container>

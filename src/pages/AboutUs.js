@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import BgHome from "images/bg-about.png";
+import Group from "images/Group.png";
 import Header, {
   NavLink,
   NavLinks,
@@ -59,9 +60,9 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="/about-us">ABOUT US</NavLink>
-      <NavLink href="#">SERVICE</NavLink>
-      <NavLink href="#">CONTACT US</NavLink>
-      <NavLink href="#">OUR TEAM</NavLink>
+      <NavLink href="/service">SERVICE</NavLink>
+      <NavLink href="/contact-us">CONTACT US</NavLink>
+      <NavLink href="/our-team">OUR TEAM</NavLink>
     </NavLinks>,
     // <NavLinks key={2}>
     //   <PrimaryLink href="/#">Hire Us</PrimaryLink>
@@ -76,7 +77,7 @@ export default () => {
             <Container1>
               <ContentWithPaddingXl>
                 <HeadingContainer>
-                  <Heading>Our Service</Heading>
+                  <Heading>About Us</Heading>
                 </HeadingContainer>
               </ContentWithPaddingXl>
             </Container1>
@@ -90,7 +91,7 @@ export default () => {
               mobile application development, UI/UX, and several times solving difficult problems 
               in the field of Information and Technology"
               primaryButtonText="See Our Team"
-              imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+              imageSrc={Group}
             />
           </AnimationRevealPage>
           <Footer />

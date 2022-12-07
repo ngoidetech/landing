@@ -54,13 +54,13 @@ export default () => {
                 <Link href="/about-us">About Us</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Service</Link>
+                <Link href="/service">Service</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Contact Us</Link>
+                <Link href="/contact-us">Contact Us</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Our Team</Link>
+                <Link href="/our-team">Our Team</Link>
               </LinkListItem>
             </LinkList>
           </Column>

@@ -49,9 +49,9 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="/about-us">ABOUT US</NavLink>
-      <NavLink href="#">SERVICE</NavLink>
-      <NavLink href="#">CONTACT US</NavLink>
-      <NavLink href="#">OUR TEAM</NavLink>
+      <NavLink href="/service">SERVICE</NavLink>
+      <NavLink href="/contact-us">CONTACT US</NavLink>
+      <NavLink href="/out-team">OUR TEAM</NavLink>
     </NavLinks>,
     // <NavLinks key={2}>
     //   <PrimaryLink href="/#">Hire Us</PrimaryLink>
