@@ -46,13 +46,13 @@ export default ({}) => {
       imageSrc: ricky,
       author: "Ricky Andika",
       title: "Full Stack Web Developer",
-      href: 'https://ical852.github.io/'
+      href: '#'
     },
     {
       imageSrc: ical,
       author: "Shalahuddin Ahmad Aziz",
       title: "Web / App / Backend Dev",
-      href: '#'
+      href: 'https://ical852.github.io/'
     },
     {
       imageSrc: nugi,
@@ -109,6 +109,7 @@ export default ({}) => {
                   style={{
                     position: "absolute",
                     marginTop: "-3rem",
+                    resizeMode: 'cover'
                   }}
                 />
                 <Details>
