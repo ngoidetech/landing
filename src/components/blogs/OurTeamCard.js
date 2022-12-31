@@ -3,6 +3,15 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { ReactComponent as UserIcon } from "feather-icons/dist/icons/user.svg";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import aan from "images/team/aan.png";
+import ricky from "images/team/ricky.png";
+import ical from "images/team/ical.png";
+import nugi from "images/team/nugi.png";
+import yohanes from "images/team/yohanes.png";
+import akbar from "images/team/akbar.png";
+import yasir from "images/team/yasir.png";
+import ripo from "images/team/ripo.png";
+import pai from "images/team/pai.png";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto pb-20 lg:pb-24`;
@@ -34,56 +43,47 @@ const NameAuthor = tw.h5`mt-4 leading-snug font-bold text-lg text-white`;
 export default ({}) => {
   const blogPosts = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: ricky,
       author: "Ricky Andika",
       title: "Full Stack Web Developer",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: ical,
       author: "Shalahuddin Ahmad Aziz",
       title: "Web / App / Backend Dev",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageSrc: nugi,
       author: "Nugraha Ardinata Pratama",
       title: "UI/UX Designer & Data Analyst",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: akbar,
       author: "Akbar Anung",
       title: "Front End Developer",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: ripo,
       author: "Rivo Yajnatantra Izzulhac",
       title: "Data Engineer/Analyst",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageSrc: yasir,
       author: "M Yasir Khoiri",
       title: "Front End Web Developer",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: pai,
       author: "Ahmad Rifai",
       title: "Quality Assurance/Tester",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: aan,
       author: "M Farhan Fadillah",
       title: "Social Media Specialist",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      imageSrc: yohanes,
       author: "Yohannes Mikael",
       title: "Mobile Developer",
     },
