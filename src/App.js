@@ -105,6 +105,15 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
+// Ngoide Pages
+
+import HomePage from "ngoidePages/HomePage.js";
+import AboutUsPage1 from "ngoidePages/AboutUsPage.js";
+import ServicePage1 from "ngoidePages/ServicePage.js";
+import OurTeamPage1 from "ngoidePages/OurTeamPage.js";
+import ContactUsPage1 from "ngoidePages/ContactUsPage.js";
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -117,14 +126,15 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          {/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} /> */}
-          <Route path="/our-team" element={<AboutUsPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/our-team" element={<OurTeamPage1 />} />
+          <Route path="/contact-us1" element={<ContactUsPage1 />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/about-us" element={<AboutUsPage />} />
-          <Route path="/" element={<EventLandingPage />} />
+          <Route path="/service" element={<ServicePage1 />} />
+          <Route path="/about-us" element={<AboutUsPage1 />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </Router>
     </>

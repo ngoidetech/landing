@@ -61,9 +61,9 @@ const Heading = tw(SectionHeading)`sm:text-3xl md:text-4xl lg:text-5xl`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 
 const ContainerImage = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
-const ImageColumn = tw(Column)`md:w-4/12 flex-shrink-0 relative`;
-const ImageColumn1 = tw(Column)`md:w-8/12 flex-shrink-0 relative`;
+const TwoColumn = tw.div`flex flex-row md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
+const ImageColumn = tw(Column)`md:w-4/12 w-auto flex-shrink-0 relative`;
+const ImageColumn1 = tw(Column)`md:w-8/12 w-auto flex-shrink-0 relative`;
 const Image = styled.img((props) => [
   props.imageRounded && tw`rounded`,
   props.imageBorder && tw`border`,
@@ -129,6 +129,7 @@ export default (
               </TwoColumn>
             </ContainerImage>
             <Features />
+            3 reasons you should work with us
           </AnimationRevealPage>
           <Footer />
         </Content>

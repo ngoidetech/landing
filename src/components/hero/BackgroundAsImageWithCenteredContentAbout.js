@@ -11,7 +11,7 @@ import Header, {
   NavToggle,
   DesktopNavLinks,
 } from "../headers/light.js";
-import BgHome from "images/bg-home.png";
+import BgHome from "images/bg-about.png";
 import IconVerif from "images/ic_round-verified.svg";
 
 const StyledHeader = styled(Header)`
@@ -25,15 +25,17 @@ const StyledHeader = styled(Header)`
 `;
 
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-96 min-h-96`}
   background-image: url("${BgHome}");
 `;
 
+// relative -mx-8 -mt-8 bg-center bg-cover h-96 min-h-96
+
 const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
-const Content = tw.div`flex flex-1 flex-col`;
+const Content = tw.div`flex flex-1 flex-col place-content-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl mb-5 sm:text-4xl lg:text-5xl xl:text-4xl font-black text-gray-100 leading-snug mt-16 sm:mt-16`}
+  ${tw`text-3xl mb-5 sm:text-4xl lg:text-5xl xl:text-4xl font-black text-gray-100 leading-snug`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -57,12 +59,7 @@ export default () => {
       <HeroContainer>
         <StyledHeader links={navLinks} />
         <Content>
-          <Heading>Problem? Solve with Us</Heading>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/> Web Development</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>Mobile Development</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>UI/UX Design</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>IT Consultant</PrimaryAction>
-          <PrimaryActionBtn style={{width:'15rem', background:'white', color:'black'}}>Find More</PrimaryActionBtn>
+          <Heading>About Us</Heading>
         </Content>
       </HeroContainer>
     </Container>
