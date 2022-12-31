@@ -126,12 +126,11 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
+          {/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} /> */}
+          {/* <Route path="/components/:type/:name" element={<ComponentRenderer />} /> */}
+          {/* <Route path="/thank-you" element={<ThankYouPage />} /> */}
           <Route path="/our-team" element={<OurTeamPage1 />} />
-          <Route path="/contact-us1" element={<ContactUsPage1 />} />
-          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/contact-us" element={<ContactUsPage1 />} />
           <Route path="/service" element={<ServicePage1 />} />
           <Route path="/about-us" element={<AboutUsPage1 />} />
           <Route path="/" element={<HomePage />} />
