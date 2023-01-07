@@ -75,11 +75,11 @@ export default () => {
           <ColumnRight>
             <ColumnHeading>Contact</ColumnHeading>
             <LinkList>
-              <LinkListItem>
-                +62 822 1022 5677
+              <LinkListItem href="https://api.whatsapp.com/send?phone=6281398019412&text=Nugraha%20Anjing">
+                +62 813 9801 9412
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">ngoidetech@gmail.com</Link>
+                <Link href="mailto:ngoidetech@gmail.com">ngoidetech@gmail.com</Link>
               </LinkListItem>
             </LinkList>
           </ColumnRight>
