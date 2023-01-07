@@ -52,7 +52,7 @@ export default ({}) => {
       imageSrc: nugi,
       author: "Nugraha Ardinata Pratama",
       title: "UI/UX Designer & Data Analyst",
-      href: "www.linkedin.com/in/nugrahaardinatapratama",
+      href: "https://www.linkedin.com/in/nugrahaardinatapratama",
     },
     {
       imageSrc: ical,
