@@ -46,46 +46,55 @@ export default ({}) => {
       imageSrc: ricky,
       author: "Ricky Andika",
       title: "Full Stack Web Developer",
+      href: "#",
+    },
+    {
+      imageSrc: nugi,
+      author: "Nugraha Ardinata Pratama",
+      title: "UI/UX Designer & Data Analyst",
+      href: "#",
     },
     {
       imageSrc: ical,
       author: "Shalahuddin Ahmad Aziz",
       title: "Web / App / Backend Dev",
+      href: "https://ical852.github.io/",
     },
-      {
-        imageSrc: nugi,
-        author: "Nugraha Ardinata Pratama",
-        title: "UI/UX Designer & Data Analyst",
-      },
     {
       imageSrc: akbar,
       author: "Akbar Anung",
       title: "Front End Developer",
+      href: "#",
     },
     {
       imageSrc: ripo,
       author: "Rivo Yajnatantra Izzulhac",
       title: "Data Engineer/Analyst",
+      href: "#",
     },
     {
       imageSrc: yasir,
       author: "M Yasir Khoiri",
       title: "Front End Web Developer",
+      href: "#",
     },
     {
       imageSrc: pai,
       author: "Ahmad Rifai",
       title: "Quality Assurance/Tester",
+      href: "#",
     },
     {
       imageSrc: aan,
       author: "M Farhan Fadillah",
       title: "Social Media Specialist",
+      href: "#",
     },
     {
       imageSrc: yohanes,
       author: "Yohannes Mikael",
       title: "Mobile Developer",
+      href: "#",
     },
   ];
   return (
@@ -101,7 +110,7 @@ export default ({}) => {
                     position: "absolute",
                     marginTop: "-3rem",
                     backgroundPositionX: "center",
-                    backgroundSize: "cover"
+                    backgroundSize: "cover",
                   }}
                 />
                 <Details>
@@ -111,7 +120,7 @@ export default ({}) => {
                     </Meta>
                   </MetaContainer>
                   <Title>{post.title}</Title>
-                  <Link href="#">Portofolio</Link>
+                  <Link href={post.href}>Portofolio</Link>
                 </Details>
               </Card>
             </Column>
