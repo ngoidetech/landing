@@ -63,7 +63,7 @@ export default ({}) => {
     {
       imageSrc: akbar,
       author: "Akbar Anung",
-      title: "Front End Developer",
+      title: "Front End Developer & Database Administrator",
       href: "#",
     },
     {
