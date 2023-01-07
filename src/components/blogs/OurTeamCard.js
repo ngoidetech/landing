@@ -52,7 +52,7 @@ export default ({}) => {
       imageSrc: nugi,
       author: "Nugraha Ardinata Pratama",
       title: "UI/UX Designer & Data Analyst",
-      href: "#",
+      href: "www.linkedin.com/in/nugrahaardinatapratama",
     },
     {
       imageSrc: ical,
@@ -120,7 +120,7 @@ export default ({}) => {
                     </Meta>
                   </MetaContainer>
                   <Title>{post.title}</Title>
-                  <Link href={post.href}>Portofolio</Link>
+                  <Link href={post.href} target="_blank">Portofolio</Link>
                 </Details>
               </Card>
             </Column>
