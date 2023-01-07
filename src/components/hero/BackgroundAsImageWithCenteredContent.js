@@ -40,7 +40,7 @@ const Heading = styled.h1`
 `;
 
 const PrimaryAction = tw.div`flex text-xl mt-5 sm:text-base sm:mt-8 font-bold transition duration-300 text-gray-100 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
-const PrimaryActionBtn = tw.button`rounded-full px-8 py-3 mt-8 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
+const PrimaryActionBtn = tw.a`rounded-full px-8 py-3 mt-8 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default () => {
   const navLinks = [
@@ -58,11 +58,33 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>Problem? Solve with Us</Heading>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/> Web Development</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>Mobile Development</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>UI/UX Design</PrimaryAction>
-          <PrimaryAction><img src={IconVerif} style={{marginRight:'1rem'}}/>IT Consultant</PrimaryAction>
-          <PrimaryActionBtn style={{width:'15rem', background:'white', color:'black'}}>Find More</PrimaryActionBtn>
+          <PrimaryAction>
+            <img src={IconVerif} style={{ marginRight: "1rem" }} /> Web
+            Development
+          </PrimaryAction>
+          <PrimaryAction>
+            <img src={IconVerif} style={{ marginRight: "1rem" }} />
+            Mobile Development
+          </PrimaryAction>
+          <PrimaryAction>
+            <img src={IconVerif} style={{ marginRight: "1rem" }} />
+            UI/UX Design
+          </PrimaryAction>
+          <PrimaryAction>
+            <img src={IconVerif} style={{ marginRight: "1rem" }} />
+            IT Consultant
+          </PrimaryAction>
+          <PrimaryActionBtn
+            href="/service"
+            style={{
+              width: "15rem",
+              background: "white",
+              color: "black",
+              textAlign: "center",
+            }}
+          >
+            Find More
+          </PrimaryActionBtn>
         </Content>
       </HeroContainer>
     </Container>

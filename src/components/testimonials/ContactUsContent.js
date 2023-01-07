@@ -17,7 +17,7 @@ const HeadingContainer = tw.div`text-center`;
 const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
 const Heading = tw.div`text-center`;
 const Description = tw(SectionDescription)`mx-auto text-center text-black`;
-const PrimaryActionBtn = tw.a`rounded-full px-8 py-3 mt-8 mr-auto lg:mr-4 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
+const PrimaryActionBtn = tw.button`rounded-full px-8 py-3 mt-8 mr-auto lg:mr-4 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default ({
   subheading = "",

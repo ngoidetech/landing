@@ -46,7 +46,7 @@ export default ({}) => {
       imageSrc: ricky,
       author: "Ricky Andika",
       title: "Full Stack Web Developer",
-      href: "#",
+      href: "https://www.linkedin.com/in/rickyandika/",
     },
     {
       imageSrc: nugi,

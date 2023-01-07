@@ -29,6 +29,7 @@ export default () => (
       Source : teknoia.com"
       imageSrc={ServiceImg}
       buttonRounded={false}
+      primaryButtonUrl="/our-team"
     />
     <MainFeature
       heading="2. make your business from off to on"
@@ -38,6 +39,7 @@ export default () => (
       imageSrc={ServiceImg1}
       buttonRounded={false}
       textOnLeft={false}
+      primaryButtonUrl="/our-team"
     />
     <MainFeature
       heading="3. We solve your It problem"
@@ -45,6 +47,7 @@ export default () => (
       Just contact us."
       imageSrc={ServiceImg2}
       buttonRounded={false}
+      primaryButtonUrl="/our-team"
     />
     <Footer />
   </AnimationRevealPage>

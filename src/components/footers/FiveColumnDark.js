@@ -75,8 +75,8 @@ export default () => {
           <ColumnRight>
             <ColumnHeading>Contact</ColumnHeading>
             <LinkList>
-              <LinkListItem href="https://api.whatsapp.com/send?phone=6281398019412&text=Nugraha%20Anjing">
-                +62 813 9801 9412
+              <LinkListItem >
+              <Link href="https://api.whatsapp.com/send?phone=6281398019412&text=Nugraha%20Anjing">+62 813 9801 9412</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="mailto:ngoidetech@gmail.com">ngoidetech@gmail.com</Link>

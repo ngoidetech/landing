@@ -54,7 +54,7 @@ export default ({
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/our-team",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
@@ -69,7 +69,9 @@ export default ({
 
   return (
     <Container>
-      <TwoColumn>
+      <TwoColumn style={{
+              zIndex: "0",
+            }}>
         <ImageColumn>
           <Image
             css={imageCss}
@@ -77,6 +79,7 @@ export default ({
             imageBorder={imageBorder}
             imageShadow={imageShadow}
             imageRounded={imageRounded}
+            
           />
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
         </ImageColumn>
@@ -85,7 +88,7 @@ export default ({
             {subheading ? <Subheading>{subheading}</Subheading> : null}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Description1>Get close with us?</Description1>
+            <Description1>Interested to colaborate with us?</Description1>
             <PrimaryButton
               buttonRounded={buttonRounded}
               as="a"

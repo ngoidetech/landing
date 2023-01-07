@@ -57,7 +57,7 @@ const Card = styled.div`
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
-const PrimaryActionBtn = tw.button`rounded-full px-8 py-3 mt-8 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
+const PrimaryActionBtn = tw.a`rounded-full px-8 py-3 mt-8 text-sm sm:text-base sm:mt-8 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default () => {
   /*
@@ -116,7 +116,9 @@ export default () => {
                     background: "black",
                     color: "white",
                     marginRight: "auto",
+                    textAlign: "center",
                   }}
+                  href="/our-team"
                 >
                   See Our Portofolio
                 </PrimaryActionBtn>
@@ -138,7 +140,9 @@ export default () => {
                     background: "black",
                     color: "white",
                     marginRight: "auto",
+                    textAlign: "center",
                   }}
+                  href="/our-team"
                 >
                   See Our Portofolio
                 </PrimaryActionBtn>

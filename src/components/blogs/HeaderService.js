@@ -34,7 +34,7 @@ const PostImage = styled.div`
 `;
 
 const PostContainer = styled.div`
-  ${tw`relative z-20 mt-10 sm:pt-3 pr-3 w-full sm:w-1/2 lg:w-1/3 max-w-sm mx-auto sm:max-w-none sm:mx-0`}
+  ${tw`relative mt-10 sm:pt-3 pr-3 w-full sm:w-1/2 lg:w-1/3 max-w-sm mx-auto sm:max-w-none sm:mx-0`}
 
   ${(props) =>
     props.featured &&
