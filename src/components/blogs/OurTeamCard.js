@@ -52,11 +52,11 @@ export default ({}) => {
       author: "Shalahuddin Ahmad Aziz",
       title: "Web / App / Backend Dev",
     },
-    {
-      imageSrc: nugi,
-      author: "Nugraha Ardinata Pratama",
-      title: "UI/UX Designer & Data Analyst",
-    },
+      {
+        imageSrc: nugi,
+        author: "Nugraha Ardinata Pratama",
+        title: "UI/UX Designer & Data Analyst",
+      },
     {
       imageSrc: akbar,
       author: "Akbar Anung",
@@ -100,6 +100,8 @@ export default ({}) => {
                   style={{
                     position: "absolute",
                     marginTop: "-3rem",
+                    backgroundPositionX: "center",
+                    backgroundSize: "cover"
                   }}
                 />
                 <Details>
