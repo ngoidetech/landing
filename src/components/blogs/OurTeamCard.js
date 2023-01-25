@@ -57,14 +57,14 @@ export default ({}) => {
     {
       imageSrc: ical,
       author: "Shalahuddin Ahmad Aziz",
-      title: "Web / App / Backend Dev",
+      title: "Full Stack Engineer & Project Manager",
       href: "https://ical852.github.io/",
     },
     {
       imageSrc: akbar,
       author: "Akbar Anung",
       title: "Front End Developer & Database Administrator",
-      href: "#",
+      href: "https://akbaranung.github.io/",
     },
     {
       imageSrc: ripo,

@@ -21,6 +21,8 @@ import IconFigma from './figma.png'
 import IconAdobePs from './adobeps.png'
 import IconPython from './python.png'
 import IconTableau from './tableau.png'
+import IconPowerBI from './powerbi.webp'
+import IconAdobeAI from './adobeai.png'
 
 export {
     IconReact, IconNext, IconNuxt, IconVue, IconSvelte,
@@ -41,5 +43,7 @@ export {
     IconFigma,
     IconAdobePs,
     IconPython,
-    IconTableau
+    IconTableau,
+    IconPowerBI,
+    IconAdobeAI
 }

@@ -16,7 +16,7 @@ import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
-import { IconReact, IconNext, IconVue, IconNuxt, IconSvelte, IconCi3, IconLaravel, IconExpress, IconNode, IconGolang, IconSpring, IconDjango, IconRails, IconAndroid, IconJava, IconKotlin, IconXcode, IconSwift, IconFlutter, IconFigma, IconAdobePs, IconTableau, IconPython } from '../../images/services'
+import { IconReact, IconNext, IconVue, IconNuxt, IconSvelte, IconCi3, IconLaravel, IconExpress, IconNode, IconGolang, IconSpring, IconDjango, IconRails, IconAndroid, IconJava, IconKotlin, IconXcode, IconSwift, IconFlutter, IconFigma, IconAdobePs, IconTableau, IconPython, IconPowerBI, IconAdobeAI } from '../../images/services'
 
 const Container = tw.div`relative`;
 
@@ -119,7 +119,7 @@ export default () => {
         "We are experienced in Data Analyst for your business needs",
       border: true,
       icons: [
-        IconTableau, IconPython
+        IconTableau, IconPython, IconPowerBI
       ]
     },
     {
@@ -128,7 +128,7 @@ export default () => {
       description:
         "We are experienced in graphic designing ranging from personal and business needs",
         icons: [
-          IconFigma, IconAdobePs
+          IconFigma, IconAdobePs, IconAdobeAI
         ]
     },
   ];
@@ -150,7 +150,7 @@ export default () => {
                 <div className="tech-icons">
                   {card.icons.map((icon) => {
                     return (
-                      <img src={icon} style={{ maxHeight: 32, marginTop: 16, marginRight: 8 }} />
+                      <img src={icon} style={{ maxHeight: 32, marginTop: 16, marginRight: 24 }} />
                     )
                   })}
                 </div>
@@ -181,7 +181,7 @@ export default () => {
                 <div className="tech-icons">
                   {card.icons.map((icon) => {
                     return (
-                      <img src={icon} style={{ maxHeight: 32, marginTop: 12, marginRight: 8 }} />
+                      <img src={icon} style={{ maxHeight: 32, marginTop: 12, marginRight: 24 }} />
                     )
                   })}
                 </div>
