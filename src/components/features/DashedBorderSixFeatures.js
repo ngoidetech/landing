@@ -16,6 +16,7 @@ import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
+import { IconReact, IconNext, IconVue, IconNuxt, IconSvelte, IconCi3, IconLaravel, IconExpress, IconNode, IconGolang, IconSpring, IconDjango, IconRails, IconAndroid, IconJava, IconKotlin, IconXcode, IconSwift, IconFlutter, IconFigma, IconAdobePs, IconTableau, IconPython } from '../../images/services'
 
 const Container = tw.div`relative`;
 
@@ -33,7 +34,8 @@ const ColumnRightBorder = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col max-w-xs items-center my-12`}
+  ${tw`flex flex-col max-w-lg items-start my-5 w-full drop-shadow-lg bg-white p-5 rounded-xl`}
+  
   .imageContainer {
     ${tw`border-2 border-black text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
@@ -42,15 +44,19 @@ const Card = styled.div`
   }
 
   .textContainer {
-    ${tw`text-left`}
+    ${tw`text-left flex-1`}
   }
 
   .title {
-    ${tw`flex mt-2 font-bold text-xl leading-none text-black items-center`}
+    ${tw`flex font-bold text-2xl leading-none text-black items-center`}
   }
 
   .description {
     ${tw`mt-3 font-semibold text-black text-sm leading-loose`}
+  }
+
+  .tech-icons {
+    ${tw`flex flex-row flex-wrap`}
   }
 `;
 
@@ -75,11 +81,17 @@ export default () => {
       description:
         "We are experienced in website development ranging from personal and business needs",
       border: true,
+      icons: [
+        IconReact, IconNext, IconVue, IconNuxt, IconSvelte
+      ]
     },
     {
       imageSrc: SupportIconImage,
-      title: "IT Consultant",
-      description: "Have a IT problem? dont worry let us help you.",
+      title: "Backend Development",
+      description: "We are experienced in backend development ranging from personal and business needs",
+      icons: [
+        IconCi3, IconLaravel, IconExpress, IconNode, IconGolang, IconSpring, IconDjango, IconRails
+      ]
     },
     {
       imageSrc: CustomizeIconImage,
@@ -87,12 +99,37 @@ export default () => {
       description:
         "We are experienced in mobile development for your business needs",
       border: true,
+      icons: [
+        IconAndroid, IconJava, IconKotlin, IconXcode, IconSwift, IconFlutter, IconReact
+      ]
     },
     {
       imageSrc: ReliableIconImage,
       title: "UI/UX Design",
       description:
         "We are experienced in website/apps designing ranging from personal and business needs",
+        icons: [
+          IconFigma, IconAdobePs
+        ]
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Data Analyst",
+      description:
+        "We are experienced in Data Analyst for your business needs",
+      border: true,
+      icons: [
+        IconTableau, IconPython
+      ]
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Graphic Design",
+      description:
+        "We are experienced in graphic designing ranging from personal and business needs",
+        icons: [
+          IconFigma, IconAdobePs
+        ]
     },
   ];
 
@@ -110,6 +147,13 @@ export default () => {
                   </span>
                   <p className="description">{card.description}</p>
                 </span>
+                <div className="tech-icons">
+                  {card.icons.map((icon) => {
+                    return (
+                      <img src={icon} style={{ maxHeight: 32, marginTop: 16, marginRight: 8 }} />
+                    )
+                  })}
+                </div>
                 <PrimaryActionBtn
                   style={{
                     width: "15rem",
@@ -134,6 +178,13 @@ export default () => {
                   </span>
                   <p className="description">{card.description}</p>
                 </span>
+                <div className="tech-icons">
+                  {card.icons.map((icon) => {
+                    return (
+                      <img src={icon} style={{ maxHeight: 32, marginTop: 12, marginRight: 8 }} />
+                    )
+                  })}
+                </div>
                 <PrimaryActionBtn
                   style={{
                     width: "15rem",
